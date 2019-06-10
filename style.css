@@ -8,10 +8,6 @@
     margin: 0 auto;
 }
 
-header {
-    text-align: center;
-}
-
 .row::before
 .row::after {
     content: "";
@@ -19,11 +15,18 @@ header {
     clear: both;
 }
 
+
 [class*="col-"] {
     float: left;
     min-height: 1px;
     padding: 10px;
+    text-align: justify;
 }
+p {
+    font-weight: bold;
+}
+
+
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
@@ -36,7 +39,13 @@ header {
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.colk-12 {
+    width: 100%;
+    float: left;
+    min-height: 1px;
+    padding: 10px;
+    text-align: center;
+}
 
 .col-offset-0 {margin-left: 0}
 .col-offset-1 {margin-left: 8.33%;}
@@ -56,6 +65,6 @@ footer {
     font-style: italic;
     text-align: center;
     font-size: 20px;
-    font-weight: bold
-
+    font-weight: bold;
+    margin-top: 40px;
 }
